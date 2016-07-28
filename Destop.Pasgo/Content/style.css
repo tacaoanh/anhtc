@@ -1,0 +1,901 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+/*trang chủ*/
+#txt-h1 {
+margin-top:128px;
+}
+
+#search-home {
+   
+    background-repeat:no-repeat;
+    height:690px;
+    width:100%;
+}
+    #search-home #txt-search-border {
+    border:1px solid#fff;
+    width:546px;
+    }
+   #txt-search-border #txt-search{
+    position:relative;
+    width: 540px;
+    height: 58px;
+    background-color:transparent;
+    /*border:none;*/
+    color:#fff;
+    font-size:1.2em;
+    position:relative;
+    z-index:1;
+    margin:2px 2px 2px 2px;
+}
+#btn-img{
+    background-image:url(../Images/Service/search.png);
+    background-repeat:no-repeat;
+    background-color:transparent;
+    border:none; 
+    padding:10px 10px 10px 10px;
+    width:33px;
+    height: 32px;
+    position:absolute;
+    bottom: 23px;
+    right: 225px;
+    z-index:2;
+}
+#imgrespone{
+    position:relative;
+    z-index:100;
+}
+#select{
+    background-image:url(../Images/Service/bgcombo.png);
+    width:252px;
+    height:64px;
+    margin-right:-24px;
+    color:#fff;
+    background-color:#e5e8e8;
+    float:right;
+}
+/*style 1000 điểm đến*/
+#description{
+    color:#ababab;
+    font-size:12px;
+    margin-bottom:0px;
+}
+#logo-cofee{
+    height:63px;
+    width:105.5%;
+    background-image:url(../Images/Service/_shadow.png);
+    position:absolute;
+    top:278px;
+    left:-19px;
+    z-index:10;
+    color:#fff;
+    /*font-weight:bold;*/
+    padding-top:5px;
+}
+    #logo-cofee img {
+        position:relative;
+        bottom: 18px;
+        left: 33px;
+        z-index: 2;  
+    }
+#logo-cofee b{
+    position:relative;
+    margin-left:0px;
+    z-index:100;
+    right:182px;
+    bottom:36px;
+}
+/*logo sân bay*/
+#logo-sanbay{
+    height:63px;
+    width:105.4%;
+    background-image:url(../Images/Service/_shadow.png);
+    position:absolute;
+   bottom:0px;
+    left:-18px;
+    z-index:10;
+    color:#fff;
+    /*font-weight:bold;*/
+    padding-top:5px;
+}
+    #logo-sanbay img {
+        position:relative;
+        bottom: 18px;
+        left: 33px;
+        z-index: 2;  
+    }
+#logo-sanbay b{
+    position:relative;
+    margin-left:0px;
+    z-index:100;
+    right:188px;
+    bottom:36px;
+}
+/*thời trang*/
+#logo-thoitrang{
+    height:63px;
+    width:105%;
+    background-image:url(../Images/Service/_shadow.png);
+    position:absolute;
+    top:277px;
+    right:-15px;
+    z-index:10;
+    color:#fff;    
+    padding-top:5px;
+}
+    #logo-thoitrang img {
+        position:relative;
+        bottom: 18px;
+        left: 33px;
+        z-index: 2;  
+    }
+#logo-thoitrang b{
+    position:relative;
+    margin-left:0px;
+    z-index:100;
+    right:182px;
+    bottom:36px;
+}
+/*logo giải trí*/
+#logo-giaitri{
+    height:63px;
+    width:104.6%;
+    background-image:url(../Images/Service/_shadow.png);
+    position:absolute;
+    bottom:-2px;
+    right:-15px;
+    z-index:10;
+    color:#fff;   
+    padding-top:5px;
+}
+    #logo-giaitri img {
+        position:relative;
+        bottom: 18px;
+        left: 33px;
+        z-index: 2;  
+    }
+#logo-giaitri b{
+    position:relative;
+    margin-left:0px;
+    z-index:100;
+    right:190px;
+    bottom:36px;
+}
+/*logo nhà hàng*/
+#logo-nhahang{
+    height: 63px;
+    width: 105.4%;
+    background-image: url(../Images/Service/_shadow.png);
+    position: absolute;
+    bottom: 0px;
+    left: -15px;
+    z-index: 10;
+    color: #fff;
+    padding-top: 5px;
+}
+    #logo-nhahang img {
+        position:relative;
+        bottom: 18px;
+        left: 33px;
+        z-index: 2;  
+    }
+#logo-nhahang b{
+    position:relative;
+    margin-left:0px;
+    z-index:100;
+    right:151px;
+    bottom:36px;
+}
+/*css*/
+.center hr {
+background-image: url(../Images/Helpdatban/vien-dat-cho.png);
+    width: 258px;
+    height: 20px;
+    border-top-color: transparent;
+}
+.tab-content #all,#binhdan {
+  
+    padding-right:0px;
+    padding-left:0px;
+}
+#all #giam-gia-hover{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    color: #fff; 
+    border: 1px solid#fff; 
+    padding: 16px 8px 16px 8px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+#all .row .col-md-4{
+      position:relative;
+      bottom:0px;
+      max-height: 385px;
+      left:0px;
+      z-index:1;
+}
+#all #page-site-tab {
+    margin-top:40px;
+    margin-left:106px;
+    margin-bottom:70px;
+}
+#binhdan .row .col-md-4{
+      position:relative;
+      bottom:0px;
+      max-height: 385px;
+      left:0px;
+      padding-left:0;
+      margin-right:0px;
+      z-index:1;
+}
+#figure #txt-content-footer {
+position: relative;
+    bottom: 108px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    background: url(../Images/Service/_shadow.png);
+    height:84px;
+}
+/*bình dân*/
+/*#binhdan #figure #txt-content-footer {
+position: relative;
+    bottom: 108px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    background: url(../Images/Service/_shadow.png);
+    height:84px;
+}*/
+#binhdan  #txt-content-footer span {
+            background:#ff0000;
+            color:#fff;
+            position:relative;
+            bottom: 46px;
+            left: 154px;
+            z-index:100;
+            font-size:1.2em;
+            font-weight:bold;
+            padding: 18px 9px 17px 8px;
+            border:1px;
+            border-radius:50%;
+        }
+#txt-content-footer h4 {
+ color: #fff;
+ text-align:left;
+ padding-top: 22px; 
+ margin-left: 12px;
+ text-transform:uppercase;
+}
+#txt-content-footer h5 {
+    color:#d7d7d7;
+    margin-left:10px;
+}
+#txt-content-footer p {
+ color: #e1e0e0; margin-left: 12px;
+}
+#all #txt-content-footer span {
+            background:#ff0000;
+            color:#fff;
+            position:relative;
+            bottom: 46px;
+            left: 154px;
+            z-index:100;
+            font-size:1.2em;
+            font-weight:bold;
+            padding: 18px 9px 17px 8px;
+            border:1px;
+            border-radius:50%;
+        }
+
+.main-content {
+margin:0 auto;
+}
+/*Nhà hàng mới*/
+.nha-hang{
+    margin-bottom:104px;
+}
+.nha-hang .col-xs-1{
+    border:1px solid#dbdbdb;
+    margin-bottom:18px;
+    margin-left:18px;
+    padding: 5px 5px;
+}
+.nha-hang .col-xs-1 img {
+   /*padding-top: 10px;
+    padding-bottom: 15px;*/
+}
+
+/*end trang chủ*/
+
+ul#topnav {
+margin: 0; padding: 0;
+float: left;
+width: 100%;
+list-style: none;
+position: relative;
+font-size: 1em;
+background: #a91f31;
+}
+#topnav #left-menu{margin-left:20%;}
+
+ul#topnav li {
+float: left;
+margin: -3px; padding: 0;
+/*border-right: 1px solid #fff;*/
+}
+ul#topnav li a {
+padding: 16px 16px;
+display: block;
+color: #f0f0f0;
+text-decoration: none;
+}
+ul#topnav li:hover {
+     background:#26282b; 
+
+}
+ul#topnav li span {
+float: left;
+padding: 15px 0;
+position: absolute;
+left:0; top:46px;
+display: none;
+width: 100%;
+background:url(../Images/Service/_shadow.png);
+color: #fff;
+z-index:100;
+/*-moz-border-radius-bottomright: 5px;
+-khtml-border-radius-bottomright: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-bottomleft: 5px;
+-khtml-border-radius-bottomleft: 5px;
+-webkit-border-bottom-left-radius: 5px;*/
+}
+ul#topnav li:hover span { display: block;}
+ul#topnav li span a { display: inline; }
+ul#topnav li span a:hover {text-decoration: none;border-bottom:2px solid #ff0000;}
+ul#topnav li span a:active {text-decoration: none;border-bottom:2px solid #ff0000;}
+
+
+.hederbg{
+    width:100%;
+    height:730px;
+     background-image:url(../Images/header_k.png);   
+}
+/*css*/
+#slide-thongtin .col-md-12 {
+    
+    padding-left:0px;
+}
+.Page-number ul >li {
+  list-style:none;
+  float:left;
+  text-align:center;
+  margin-left:2px;
+  margin-bottom:75px;
+  margin-top:40px;
+}
+/*đặt text cho nhà hàng(điểm tài trợ)*/
+#text-name-service {
+  position:relative;   
+}
+#text-name-service div {
+ background-image:url(../Images/Service/_shadow.png);   
+    position:absolute;
+    bottom: 9px;
+    left: 18px;
+    z-index: 2;
+    width: 94%;
+    height: 80px;
+    cursor:pointer;
+}
+    #text-name-service div span {
+            background:#ff0000;
+            color:#fff;
+            position:relative;
+            bottom: 54px;
+            left: 364px;
+            z-index:2;
+            font-size:1.2em;
+            font-weight:bold;
+            padding: 18px 9px 17px 8px;
+            border:1px;
+            border-radius:50%;
+    }
+/*hướng dẫn đặt bàn*/
+#bg-help-datban {
+background:#f2f0f0;/*màu nền  hướng dẫn dặt bàn*/
+}
+    #bg-help-datban h2 {
+    margin-top:110px;
+    }
+    #bg-help-datban h3 {
+        color:#5F6969;
+        font-size:1em;
+    }
+    #bg-help-datban p {
+    color:#979595;
+    }
+    #bg-help-datban a {
+        color:#ff0000;
+        cursor:pointer;
+    }
+    #bg-help-datban img {
+    text-align:center;
+    margin-left:15%;
+    cursor:pointer;
+    }
+        #bg-help-datban img:hover {
+            box-shadow:0px 0px 10px 0px #000;
+        }
+    #bg-help-datban span {
+    color:#ababab;
+    font-size:12px;
+   
+    }
+    #bg-help-datban #mui-ten{
+        margin-top:60%;
+    }
+    #bg-help-datban .text-call-hoac {
+       margin-top:12%;
+    }
+    #bg-help-datban .text-call-hoac div {
+       margin-bottom:144px;
+    }
+     
+    #bg-help-datban #vitri-so {
+    border:1px solid#ababab;
+    border-radius:50%;
+    padding:7px 14px 7px 14px;
+    /*margin-top:102px;*/
+    font-weight:bold;
+    color:#000;
+    font-size:1.5em;
+    }
+    #bg-help-datban #vitri-so-hai{
+    border:1px solid#ababab;
+    border-radius:50%;
+    padding:7px 14px 7px 14px;
+    margin-top:102px;
+    font-weight:bold;
+    color:#000;
+    font-size:1.5em;
+    }
+    #bg-help-datban #icon-help-datban {
+    margin-bottom:100px;
+    }
+/*style css trang liên hệ*/
+
+#contact {
+    background:#fff;
+}
+    #contact h4 {
+    text-transform:uppercase;
+    color:#818181;
+    font-size:0.8em;
+    margin-top:64px;
+    }
+    #contact i {    
+    color:#818181;
+    
+    }
+    #khung-rd {
+    border:1px solid#d7d7d7;
+    margin-bottom:68px;
+    }      
+        #khung-rd #rd {
+            border-right:1px solid#d7d7d7;
+             margin:48px 11px 10px 40px;
+             max-width:338px;
+        }
+/*form search liên hệ*/
+#form-search-contact{
+    position:relative;
+    left:60%;
+    bottom:22px;
+    z-index:10;
+    
+}
+#form-search-contact #search-lienhe{
+    background-color:transparent;
+    border:1px solid#f2f2f2;
+    width:200px;
+    position:relative;
+    /*right:20%;
+    top:10%;*/
+    color:#fff;
+    z-index:100;
+}
+#form-search-contact #btn-search-lienhe{
+    background-color:transparent;
+    width: 23px;
+    height: 21px;   
+    position:relative;
+    right: 2.2%;
+    top: -7px;
+    z-index:100;
+    border:none;
+}
+/*tư vấn rd+ck*/
+#txt-yeu-cau-kh {
+    font-size:1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #5F6969;
+    
+}
+#form-phan-hoi {
+margin-top:30px;
+}
+  #khung-rd #rd2 {
+            border-right:1px solid#d7d7d7;
+             margin:48px 11px 10px 40px;
+             max-width:338px;
+        }
+    #khung-rd #rd2 ul li {
+        list-style:none;
+    }
+        #khung-rd #rd1 {
+            
+             margin:48px 11px 10px 40px;
+             max-width:338px;
+        }
+            #khung-rd span {
+                font-size:1em;
+                text-transform:uppercase;
+                font-weight:bold;
+                color:#5F6969;
+            }
+
+#cty-onepas {
+    margin-bottom:134px;
+}
+
+#cty-onepas #txt-address {
+    margin-top:42px;
+}
+/*About css*/
+#about-tag {
+    margin-top: 30px;
+    margin-bottom:70px;
+    border-bottom:2px dotted #ebebeb ;
+    height:150px;
+}
+#about-tag-year {
+position:relative;
+z-index:1;
+}
+#about-tag p{
+    color:#ababab;
+}
+
+#about-tag p a{
+    color:#ff0000;
+}
+#about-year span {
+     background-color:#e1e1e1;
+    font-size:1.5em;    
+    color:#757574;
+    float:left;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    padding:35px 0px 10px 27px;
+}
+#about-year #year {   
+    margin-right:160px;  
+    margin-left:0; 
+}
+#about-year {
+    position:relative;
+    top:70px;
+    right:15px;
+    z-index:100;
+
+}
+    #about-year span:hover {
+        background-color:#bf021b;
+        color:#fff;
+        box-shadow:2px 3px 10px 0px #979595;
+        cursor:pointer;
+    }
+#about-content {
+margin-bottom:76px;
+}
+#about-content h3 {
+    color:#414343;
+}
+#about-content p {
+    text-align:justify;
+    color:#818181;
+}
+#about-sangtao {
+background-color:#ebebeb;
+
+}
+#about-sangtao h2 {
+    margin-top:52px;
+    margin-bottom:38px;
+    color:#414343;
+    font-size:1.8em;
+
+}
+    #about-sangtao p {
+        text-align:justify;
+        color:#5b5b5b;
+        margin-bottom:88px;
+    }
+/*Comment and feedback*/
+#feedback {
+    background-image:url(../Images/Feedback/bg-nhanxet.png);
+}
+#feedback h2{
+    color:#fff;
+    margin-top:52px;
+}
+#feedback p{
+    color:#f3eded;
+    margin-top:5px;
+}
+#feedback #phone-alt {
+    width:108px;
+    height:108px;
+    background:#ff0000;
+    color:#fff;
+    padding-top:28px;
+    font-size:3.8em;
+    font-weight:bold;
+    border-radius:53%;
+    margin-top:40px;
+    margin-bottom:38px;
+    cursor:pointer;
+}
+    #feedback #phone-alt:hover {
+        background-color:#fff;
+        color:#000;
+        
+    }
+    #feedback #phone-number {
+        color:#fff;
+        font-size:3.8em;
+        font-weight:bold;
+       
+    }
+    #feedback #phone {
+         margin-bottom:30px;
+    }
+ /*Lĩnh vực hoạt động activities*/
+#activities {
+    margin-bottom:73px;
+}
+#activities h2 {
+   margin-top:64px;
+   margin-bottom:60px;
+}
+#activities img {
+margin-left:80px;
+margin-bottom:15px;
+}
+#activities span {
+    color:#ababab;
+    font-size:12px;
+}
+#activities #activities-title {
+    text-transform:uppercase;
+    font-size:1em;
+}
+/*khó khăn & thách thức*/
+#challenges {
+    background:#ebebeb;
+   
+}
+    #challenges h2 {
+        margin-bottom:46px;
+        margin-top:62px;
+        color:#414343;
+    }
+    #challenges #txt-challenges {
+        text-align:justify;
+        color:#979797;
+        margin-bottom:62px;
+    }
+/*đối tác hợp tác partner*/
+#partner {
+    background-image:url(../Images/Feedback/bg-doitac.png);
+
+}
+    #partner h2 {
+        margin-top:64px;
+        margin-bottom:60px;
+        color:#fff;
+    }
+    #partner #slider-partner {
+    margin-bottom:82px;
+    }
+/*page news ---------------Tin tức------------------------>*/
+#news-product {
+margin-bottom:110px;
+}
+#news-product #tag-news {
+    margin-top:30px;
+    margin-bottom:20px;
+    color:#ababab;
+}
+#news-product #tag-news a:hover{
+ color:#ff0000;
+ cursor:pointer;
+}
+#news-hr {
+    width:144px;
+    height:4px;
+    background:#ed6d25;
+    float:left;
+    margin-left:0;
+   
+}
+#news-product #txt-news-content {
+margin-bottom:26px;
+}
+#news-product #txt-news-content a {
+color:#8e8f8f;
+text-align:justify;
+cursor:pointer;
+}
+    #news-product #txt-news-content a:hover {       
+        color:#097cf8;
+        text-decoration:none;
+
+    }
+/*Chi tiết tin tức*/
+#news-detail {
+    background-image:url(../Images/News/bg_newsdetail.png);
+    background-repeat:no-repeat;
+}
+   
+#news-detail .tab-content{
+    background-color:#fff;
+}
+    #news-detail h2{       
+        color:#fff;
+        margin-bottom:116px;
+    }
+    #news-detail p {
+     margin-top:90px;
+     color:#ebebeb;
+     font-size:11px;
+    }
+    #news-detail #myTab {
+    /*background-image:url(../Images/Service/_shadow.png);*/
+    }
+   /*css hình ngôi sao*/
+    #news-detail #news-sao {
+    width:100%;
+    min-height:142px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    margin-bottom:10px;
+    /*margin-top:5px;*/
+    }
+        #news-detail #news-sao div {
+         font-size:13px;
+         color:#302e2e;
+        }
+        #news-detail #news-sao p {
+        margin-top:0;
+         font-size:11px;
+         color:#d7d7d7;
+        }
+ #news-detail #news-datcho {
+    width:100%;
+    min-height:142px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    margin-bottom:20px;
+    }
+        #news-detail #news-datcho div {
+         font-size:13px;
+         color:#ff0000;
+         font-weight:bold;
+        }
+        #news-detail #news-datcho p {
+        margin-top:0;
+         font-size:11px;
+         margin-top:48px;
+         color:#ababab;
+        }
+
+/*end css sao*/
+ #news-detail #txt-newsdetail {
+    width:102%;
+    min-height:142px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    padding-top:14px;
+    margin-bottom:20px;
+}
+
+#txt-newsdetail #tags > li {
+
+list-style:none;
+float:left;
+margin-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+border-right:1px solid#ababab;
+padding-right:10px;
+color:#5F6969;
+cursor:pointer;
+
+}
+    #txt-newsdetail ul > li a {
+       text-decoration:none;
+       color:#000;
+       font-size:12px;
+    }
+#txt-newsdetail-slide {
+    width:102%;
+    min-height:142px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    padding-top:14px;
+    margin-bottom:20px;
+}
+#baivietlienquan ul li {
+
+list-style:none;
+float:left;
+margin-left:15px;
+}
+/*form1 gửi phản hồi*/
+#danhgia #form1 #gui-yeu-cau {
+    margin-bottom: 42px;
+}
+
+#danhgia #tabs-baiviet #myTab li a{
+    list-style:none;
+    color:#fff;
+    border-radius:0px;
+    font-size:12px;
+    
+}
+#tabs-nav {
+    
+    min-height:1080px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    padding-top:14px;
+    margin-bottom:20px;
+}
+#thucdon #tabs-thucdon li{
+    list-style:none;
+    color:#fff;
+    border-radius:0px;
+    font-size:12px;
+    margin-top:20px;
+}
+#thucdon #tabs-thucdon li a{
+text-decoration:none;
+color:#5F6969;
+}
+/*danh sách các mẩu tin*/
+#list-news {
+    min-height:655px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    padding-top:14px;
+    margin-bottom:20px;
+}
+#list-news-item {
+    margin-top:5px;
+    border-bottom:1px solid#f2f2f2;
+}
+/*css khung slide tabs footer*/
+#khung-slide-tabs {
+    min-height:100px;
+    border:1px solid#f2f2f2;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    padding-top:14px;
+    margin-bottom:20px;
+}

@@ -1,0 +1,24 @@
+﻿
+
+
+
+@media screen and  (min-width:1280px){
+   .destop{
+        border:1px solid#808080;
+        padding:15px 15px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1024px){
+   .destop{
+        border:1px solid#808080;
+        padding:10px 10px;
+    }
+}
+@media screen and (min-width:320px ) and (max-width:480px){
+   .destop{       
+        padding:5px 5px;
+        background-color:#00ff21;
+        border:1px solid#ff0000;
+       
+    }
+}

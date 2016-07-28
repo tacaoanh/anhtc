@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Liên hệ";
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/sukien.js"></script>
+}
+<div class="row">
+    <div class="col-lg-12">
+        <img style="max-height:692px;"  src="~/Images/Banner/banner-map.png" class="img-responsive" alt=""  />
+    </div>    
+</div>
+<div class="row" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>dịch vụ trên toàn quốc</h4>
+                <h2>LIÊN HỆ VỚI PASGO</h2>
+                <i>Hãy cho chúng tôi biết vấn đề của bạn để chúng tôi có thể giới thiệu bạn gặp đúng người ngay khi có  thể</i>
+            </div>
+        </div>
+        
+        <div class="row" id="khung-rd">
+            <!--bạn là ai-->
+            <div class="col-md-4" id="rd">
+                <span>BẠN LÀ</span><br /> 
+                <form id="form1">
+                    <input type="radio" name="rdkhachhang" id="rdkhachhang" /> Khách hàng(Cá nhân)
+                    <br />
+                    <input type="radio" name="rdkhachhang" /> Khách hàng(Doanh nghiệp)
+                    <br />
+                    <input type="radio" name="rdkhachhang" /> Đối tác
+                    <br />
+                    <input type="radio" name="rdkhachhang" /> Nhà đầu tư
+                    <br /> 
+                </form>         
+                
+            </div>
+            <!--tư vấn-->
+            <div class="col-md-4" id="rd2">
+                <span>BẠN CẦN TƯ VẤN VỀ</span><br /> 
+                <form id="form2">
+                    <input type="radio" name="rdtuvan"/> Dịch vụ đặt chỗ
+                    <br />
+                    <ul id="ckbox">
+                        <li>
+                            <input type="checkbox" name="ckonline" id="ck-online1" /> Đặt chỗ online destop<br />
+                            <input type="checkbox" name="ckonline" id="ck-online2" /> Đặt chỗ qua mobile<br />
+                            <input type="checkbox" name="ckonline" id="ck-online3" /> Gọi điện đặt chỗ<br />
+                        </li>
+                    </ul>
+                    <input type="radio" name="rdtuvan" /> Dịch vụ đặt xe
+                    <br />
+                    <input type="radio" name="rdtuvan" /> Phần mềm
+                    <br />
+                </form>                                                                  
+            </div>
+            <!--liên hệ-->
+            <div class="col-md-4" id="rd1">
+                <span>LIÊN HỆ</span>
+                <br /><br />
+                <div class="col-md-2">
+                    <span class=" glyphicon glyphicon-earphone"></span>
+                   
+                </div>
+                <div class="col-md-10">
+                    <span>0471 077 077</span><br />
+                    <span>0471 066 066</span>
+                </div>                
+                <br /><br />
+                <div class="col-md-2">
+                    <span class=" glyphicon glyphicon-earphone"></span>
+                </div>
+                <div class="col-md-10">
+                    <span>0471 077 077</span><br />
+                    <span>0471 066 066</span>
+                </div>
+                <br /><br />
+                <div class="col-md-12">
+                       <p class=" glyphicon glyphicon-envelope"> contact@pasgo.com</p>
+                </div>
+                   
+            </div>
+    </div>
+        <div class="row" >           
+                <span id="txt-yeu-cau-kh">yêu cầu của khách hàng</span>
+
+            <form class="form-group" id="form-phan-hoi" >
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="txtname" placeholder="Họ và tên" required/>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="txtemail" placeholder="Email" required/>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="txtphone" placeholder="Điện thoại" required/>
+                </div>
+                <br /><br />
+                <div class="col-md-12">
+                    <textarea class="form-control" cols="50" rows="10" name="txtarea" required placeholder="Nội dung cần phản hồi"></textarea>
+                </div>
+                <br /><br />
+                <div class="col-md-12" style="margin-top:5px;margin-bottom:30px;">
+                    <input style="float:right;" class="btn btn-danger" type="submit" name="submit" value="Gửi phản  hồi" />
+                </div>
+             
+            </form>
+            
+        </div>
+        <div class="row" id="cty-onepas">
+            <span id="txt-yeu-cau-kh">CÔNG TY CỔ PHẦN ONEPAS</span>
+            <div class="col-md-12" id="txt-address">
+                <b>Văn phòng tại TP Hà Nội:</b> <br />
+                Địa chỉ: Tầng L Tòa nhà N02, Số 25, Phố Lạc Trung, Phường Vĩnh Tuy, Quận Hai Bà Trưng, ​​TP Hà Nội<br />
+                Điện thoại: (+84) 43 200 5689<br />
+                Email: contact@onepas.com<br />
+                Website: www.onepas.com, www.pasgo.vn<br />
+                ...................................<br />
+                <b>Văn phòng tại TP HCM:</b><br />
+                Địa chỉ: Số 129/6, Đường Nguyễn Trãi, Phường 2, Quận 5, TP Hồ Chí Minh<br />
+                Điện thoại: (+84) 86 680 6565<br />
+                Email: contact@onepas.com<br />
+                Website: www.onepas.com, www.pasgo.vn<br />
+                ...................................<br />
+            </div>
+        </div>
+</div>
+</div>

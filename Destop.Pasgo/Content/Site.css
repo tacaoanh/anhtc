@@ -1,0 +1,211 @@
+﻿body {
+   margin:0;
+   padding:0;
+   background: #fff;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+h1{
+   text-transform: uppercase;
+    font-size: 40px; 
+    line-height: 50px;
+    color:#fff;
+    font-family:Arial;
+   text-justify:inter-word;
+ font-weight:700;
+}
+h2{
+    text-transform:uppercase;
+    color:#3c3d3d;
+    font-weight:bold;
+    font-size:30px;
+}
+h3 {
+    margin-top:56px;
+    font-size:1.2em;
+    font-weight:bold;
+
+}
+
+#h3{
+ margin-top:50px;
+ margin-bottom:54px;
+ color:#e5e8e8;
+ font-size:14px;
+}
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+.diem-den{
+    position:relative;
+    float:left;
+    width:624px;
+    /*border:1px solid#b94a48;*/
+    min-height:334px;
+    z-index:1;
+     
+}
+.diem-den #span-3{
+    height:63px;
+    width:624px;
+    background-image:url(../Images/Service/_shadow.png);
+    background-repeat:repeat-x;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    z-index:1;
+    color:#fff;
+    font-weight:bold;
+}
+.diem-den #span-2{
+    height:63px;
+    width:672px;
+    background-image:url(../Images/Service/_shadow.png);
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    z-index:10;
+    color:#fff;
+    font-weight:bold;
+}
+.diem-den #span-1{
+    height:63px;
+    width:672px;
+    background-image:url(../Images/Service/_shadow.png);
+    position:absolute;
+    top:284px;
+    left:0px;
+    z-index:10;
+    color:#fff;
+    /*font-weight:bold;*/
+    padding-top:5px;
+}
+.diem-den-2{
+    height:347px;
+    width:624px;
+    float:left;
+}
+.grow .img1{
+  height: 347px;
+  width: 672px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.grow .img1:hover {
+  width: 679px;
+  height: 400px;
+}
+.grow .img2{
+  height: 694px;
+  width: 646px; 
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.grow .img2:hover {
+  width: 780px;
+  height: 740px;
+}
+#span-1 img{
+    position:relative;
+    bottom: 19px;
+    left: 30px;
+    z-index:3;
+}
+#span-1 b{
+    margin-left:30px;
+}
+#span-2 img{
+    position:relative;
+    bottom: 19px;
+    left: 30px;
+    z-index:3;
+}
+#span-2 b{
+    margin-left:30px;
+}
+#span-3 img{
+    position:relative;
+    bottom: 19px;
+    left: 12px;
+    z-index:3;
+}
+#span-3 b{
+    margin-left:30px;
+}
+.nha-hang-new .xem-all-dd{
+    float: right;
+    min-width: 155px;
+    height: 26px;
+    background-color: #959595;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+}
+.nha-hang-new .xem-all{
+   float: right;
+    min-width: 155px;
+    height: 26px;
+    background-color: #b71818;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+    /*margin-bottom: 20px;*/
+}
+.nha-hang-new p{
+    margin-bottom: 20px;
+}
+#rl {
+border-left:1px solid#e5e8e8;
+border-right:1px solid#e5e8e8;
+
+}
+
+.auto-slide ul li {
+    list-style:none;
+}
+/*Service hover*/
+
+#box-img img:hover {   
+    box-shadow: 3px 74px 56px -38px #2F2828;
+   
+}

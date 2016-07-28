@@ -1,0 +1,1253 @@
+﻿@{
+    ViewBag.Title = "Pasgo.vn";
+<!--điểm đến-->
+<link href="~/css/elastislide.css" rel="stylesheet" />
+<!--quy trình đặt chỗ-->
+<link href="~/css/vertical.news.slider.css" rel="stylesheet" />
+<link href="~/stylecss/style.css" rel="stylesheet" />
+    
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('figure').hover(
+                function () {
+                    $('#txt-content-footer',this).addClass("hide");
+                },
+                function () {
+                    $('#txt-content-footer',this).removeClass("hide");
+                });
+        });          
+    </script>
+}
+<style>
+    .k-table td div{
+        padding-left:1px;
+        padding-right:1px;
+    }
+</style>
+
+<div class="row no-margin">
+    <div class="col-md-12 " style=" background-image: url(../Images/Banner/bg-search-index.png);" id="search-home">
+        <div class="container wow fadeInDown">
+            <div class="row">
+                <div class="col-md-12" id="txt-h1">
+                    <h1 class=" text-center">Tìm kiếm dịch vụ uy tín, trở thành <br /> người tiêu dùng thông minh</h1>
+                    <h3 id="h3" class="text-center">cho <u style="font-weight:bold;color:#fff;">Buffet, Đồ nướng, Đặc sản rừng núi, Spa, Karaoke</u>   và nhiều hơn thế </h3>
+                </div>
+                <div class="col-md-12">
+                    <form class="form-group" >
+                       <div class="row">
+                           <div class="col-md-4">
+                               <select id="select">
+                                   <option>Hà Nội</option>
+                                   <option>TP.Hồ Chí Minh</option>
+                               </select>
+                           </div>
+                           <div class="col-md-8">
+                               <p id="txt-search-border"><input type="text" id="txt-search" placeholder=" Tìm kiếm..." /></p>
+                               <input type="submit" id="btn-img" value="" />
+                           </div>
+                       </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--search end-->
+<div class="row wow fadeInDown">
+        <div class="col-md-12 text-center">
+            <h2>chào mừng bạn đến  với pasgo</h2>          
+            <hr style="margin-top:10px; width: 70px; text-align: center; border: 2px solid#ff0000;" />
+            <p style="color: #ababab;font-size:0.9em; margin-bottom:87px;">Bạn chọn chúng tôi, dịch vụ pasgo chọn bạn</p>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <a id="box-img">
+                        <img src="~/Images/Service/datcho.png" class="img-circle "  />
+                    </a>
+                    <h3>Đặt chỗ</h3>
+                    <p style="margin-bottom:78px;">List our own business for free. Be visible and be searchable to millions of users.</p>
+                </div>
+                <div class="col-md-4">
+                    <a id="box-img">
+                        <img src="~/Images/Helpdatban/dat-xe.png" class="img-circle " />
+                    </a>
+                    <h3>Đặt Xe</h3>
+                    <p>List our own business for free. Be visible and be searchable to millions of users.</p>
+                </div>
+                <div class="col-md-4">
+                    <a id="box-img">
+                        <img src="~/Images/Helpdatban/diem-den.png" class="img-circle " />
+                    </a>
+                    <h3>Thông tin điểm đến</h3>
+                    <p>List our own business for free. Be visible and be searchable to millions of users.</p>
+                </div>
+            </div>
+        </div>
+    </div>  <!--chào mừng bạn đến với pasgo-->
+
+<div class="row text-center" style="background-color: #ebebeb;">
+    <div class="col-md-12 center" >
+        <h2 style="margin-top:67px;">hơn 1.000 điểm đến</h2>
+        <p id="description">Chất lượng luôn là tiêu chí lựa chọn điểm đến hàng đầu của Pasgo, Hãy để mỗi đồng tiền của bạn tạo nên những trải nghiệm xứng đáng</p>
+    </div>    
+</div>
+<link href="~/css/set2.css" rel="stylesheet" /><!--hiệu ứng ảnh-->
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="grid">
+            <div class="row">
+                <figure class="effect-duke">
+                    <img class="img img-responsive" src="~/Images/Service/bar-cafe.png" />
+                </figure>
+                <span id="logo-cofee">
+                    <img src="~/Images/Service/coffee.png" width="50" height="50" class="img img-responsive" alt="" />
+                    <b>Bar - Cafe</b>
+                </span>
+            </div>
+            <div class="row">
+                <figure class="effect-duke">
+                    <img class="img img-responsive" src="~/Images/Service/san-bay.png" />
+                </figure>
+                <span id="logo-sanbay">
+                    <img src="~/Images/Service/maybay.png" width="50" height="50" class="img img-responsive" alt="" />
+                    <b>Sân bay</b>
+                </span>
+            </div>
+        </div>           
+        </div>
+    <div class="col-lg-4">
+        <div class="grid">
+            <div class="row">
+                <figure class="effect-duke">
+                    <img class="img img-responsive" src="~/Images/Service/nha-hang.png" />
+                </figure>
+                <span id="logo-nhahang">
+                    <img src="~/Images/Service/thoitrang.png" width="50" height="50" class="img img-responsive" alt="" />
+                    <b>Nhà hàng ngon</b>
+                </span>
+            </div>          
+        </div>          
+        </div>
+    <div class="col-lg-4">
+        <div class="grid">
+            <div class="row">
+                <figure class="effect-duke">
+                    <img class="img img-responsive" src="~/Images/Service/thoi-trang.png" />
+                </figure>
+                <span id="logo-thoitrang">
+                    <img src="~/Images/Service/thoitrang.png" width="50" height="50" class="img img-responsive" alt="" />
+                    <b>Thời trang</b>
+                </span>
+            </div>
+            <div class="row">
+                <figure class="effect-duke">
+                    <img class="img img-responsive" src="~/Images/Service/giai-tri.png" />
+                </figure>
+                <span id="logo-giaitri">
+                    <img src="~/Images/Service/giaitri.png" width="50" height="50" class="img img-responsive" alt="" />
+                    <b>Giải trí</b>
+                </span>
+            </div>
+        </div>
+    </div>       
+    </div><!--Hơn 1000 điểm đến-->  
+<div class="row">
+    <div class="col-md-12">
+       <div class="row">
+           <div class="col-md-12">
+               <div class="center">
+                   <h2 style=" margin-top:80px;"> đặt chỗ nhiều nhất</h2>
+                   <hr />
+               </div>             
+           </div>
+           <div class="col-md-12">
+               <ul class="container nav nav-tabs" role="tablist" id="myTab">
+                   <li class="active"><a href="#all" role="tab" data-toggle="tab">All</a></li>
+                   <li><a href="#binhdan" role="tab" data-toggle="tab">Bình dân</a></li>
+                   <li><a href="#giatrungbinh" role="tab" data-toggle="tab">Giá trung bình</a></li>
+                   <li><a href="#caocap" role="tab" data-toggle="tab">Cao cấp</a></li>
+               </ul>               
+           </div>
+           <div class="col-md-12">               
+               <div class="tab-content">
+                   <div class="container tab-pane active" id="all">
+                       <div class="row ">
+                           <div class="col-md-4"> 
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>                                          
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span> 
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                                   <br /> <br />
+                                                   <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a></p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>                                   
+                            </div>  
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div> 
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>                                 
+                       </div>
+                       <div class="row ">
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer" class="">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                       </div>  
+                       <div class="row">
+                           <div class="col-md-12" id="page-site-tab">
+                               <img src="~/Images/News/page-site.png" class="img-responsive" />
+                           </div>
+                       </div>                    
+                   </div>
+                   <div class="container tab-pane" id="binhdan">                       
+                       <div class="row ">
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row ">
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer" class="">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="grid">
+                                   <figure id="figure" class="effect-ming">
+                                       <img src="~/Images/Product/ca-xao-mang-ot.png" class="img-responsive" alt="" />
+                                       <div id="txt-content-footer">
+                                           <div style="text-align:left;">
+                                               <h4>nấm đại việt</h4>
+                                               <h5> 60 Trần xuân soạn, P. Ngô thì nhậm...</h5>
+                                           </div>
+                                           <span>-90%</span>
+                                       </div>
+                                       <figcaption>
+                                           <p>
+                                               <span id="giam-gia-hover">-15%</span>
+                                               <br />
+                                               <br /><br />
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <span style="color:#fce000;" class="glyphicon glyphicon-star"></span>
+                                               <br />
+                                               nhà hàng nấm đại việt.
+                                               <br /> <br />
+                                               <span class="glyphicon glyphicon-hand-right">.15</span>
+                                               <span class="glyphicon glyphicon-comment">.21</span>
+                                               <span class="glyphicon glyphicon-map-marker">.05</span>
+                                               <br /> <br />
+                                               <a style="color:#fff; border:1px solid #fff;padding:5px 5px 5px 5px;" href="#">Xem thêm</a>
+                                           </p>
+                                           <a href="#">View more</a>
+                                       </figcaption>
+                                   </figure>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-12" id="page-site-tab">
+                               <img src="~/Images/News/page-site.png" class="img-responsive" />
+                           </div>
+                       </div>                        
+                   </div>
+                   <div class="tab-pane" id="giatrungbinh">
+                       <div class="row">
+                           <div class="col-md-4 ">
+                               <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                               <div id="txt-content-footer">
+                                   <h4>nấm đại việt</h4>
+                                   <p>Trần xuân soạn, P. Ngô thì nhậm...</p>
+                                   <span>-90%</span>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                               <div id="txt-content-footer">
+                                   <h4>nấm đại việt</h4>
+                                   <p>Trần xuân soạn, P. Ngô thì nhậm...</p>
+                                   <span>-90%</span>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <img src="~/Images/Product/ca-ran.png" class="img-responsive" alt="" />
+                               <div id="txt-content-footer">
+                                   <h4>nấm đại việt</h4>
+                                   <p>Trần xuân soạn, P. Ngô thì nhậm...</p>
+                                   <span>-90%</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="caocap">.4..</div>
+               </div>
+               <script>
+                   $(function () {
+                       $('#myTab a:last').tab('show');
+                   })
+               </script>
+           </div>
+       </div>
+    </div><!--đặt chỗ  nhiều nhất-->
+</div><!--đặt chỗ nhiều nhất-->
+<div class="row" id="content" style="background-image: url(../images/Service/banner_4.png);">
+    <div class="container text-center" >
+        <h2 style="color: #fff; font-size: 2em; font-weight: bold;margin-top:64px; ">QUY TRÌNH  ĐẶT CHỖ</h2>
+        <p style="color: #cac9c8; font-size: 13px; margin-bottom: 44px;">Đặt bàn và nhận ưu đãi qua Pasgo chỉ qua 3 bước đơn giản, miễn phí thuận tiện</p>
+    </div><!--/.container-->
+    <div class="container wow fadeInDown">
+        <div class="row">
+            <div class="col-lg-12 auto-slide">
+                <ul class="news-headlines">
+                    <li class="selected">
+                        <div class="features-control-item features-control-item-0" data-features-item="0">
+                            <div class="media">
+                                <div class="pull-left">
+                                    <div class="ia-icon">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading">CHỌN ĐIỂM ĐẾN</h3>
+                                    <p class="hidden-xs">Bạn cần chọn Nhà Hàng mà bạn muốn đến trong hệ thống hàng trăm nhà hàng của PASGO.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="features-control-item features-control-item-2 " data-features-item="2">
+                            <div class="media">
+                                <div class="pull-left">
+                                    <div class="ia-icon">
+                                        <span class="glyphicon glyphicon-phone-alt"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading">Đặt chỗ online</h3>
+                                    <p class="hidden-xs">Bạn cần điền đầy dủ thông tin ở khung đặt chỗ bên phải rồi nhấn đặt chỗ.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="features-control-item features-control-item-4" data-features-item="4">
+                            <div class="media">
+                                <div class="pull-left">
+                                    <div class="ia-icon">
+                                        <span class="glyphicon glyphicon-phone"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading">Đặt chỗ qua điện thoại</h3>
+                                    <p class="hidden-xs">Trong trường hợp bạn không muốn đặt chỗ online bạn có thể gọi trực tiếp cho tổng đài bằng số hottline hỗ trợ miễn phí.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="features-control-item features-control-item-4" data-features-item="4">
+                            <div class="media">
+                                <div class="pull-left">
+                                    <div class="ia-icon">
+                                        <span class="glyphicon glyphicon-bell"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading">Đến thưởng thưc</h3>
+                                    <p class="hidden-xs">Sau khi đặt chỗ tổng đài viên sẽ gọi lại cho bạn để xác nhận đặt chỗ thành công của bạn.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                </ul>
+               
+                <div class="news-preview">
+                    <div class="news-content top-content">
+                        <img src="~/Images/Service/slide-apple1.png" />
+                    </div><!-- .news-content -->
+                    <div class="news-content">
+                        <img src="~/Images/Service/dien-thoai.png" />
+                    </div><!-- .news-content -->
+                    <div class="news-content">
+                        <img src="~/Images/Service/diem-den.png" />
+                    </div><!-- .news-content -->
+                    <div class="news-content">
+                        <img src="~/Images/Service/den-thuong-thuc.png" />
+                    </div><!-- .news-content -->
+
+                </div>
+                <!--Quy trình đặt chỗ-->
+                <script>window.jQuery || document.write('<script src="../stylecss/jquery-1.8.1.min.js"><\/script>')</script>
+
+                <script src="~/stylecss/vertical.news.slider.min.js"></script>
+                <script src="~/stylecss/vertical.news.slider.js"></script>
+                <script>
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-1965499-1']);
+                    _gaq.push(['_trackPageview']);
+
+                    (function () {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+                </script>
+            </div>
+        </div>
+    </div>
+</div><!--quy trình đặt chỗ-->
+<div class="row" style="background-color:#ebebeb;">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInDown">
+                <div class="nha-hang-new">
+                    <h2 style="color: #000; font-size: 2em; font-weight: bold; ">ĐIỂM ĐẾN NỔI BẬT</h2>
+                    <p style="color: #979292;font-size: 13px;">Những điểm đến hấp dẫn, thú vị dành  cho bạn<a class="xem-all-dd" href="#">Xem thêm điểm đến</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container demo-1 wow fadeInDown">
+        <div class="row">
+            <div class="col-md-12" style="margin-bottom:76px;">
+                <!-- slidebar -->
+                <ul id="carousel" class="elastislide-list clearfix">
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img class="thumbimg" src="~/Images/Service/coffee.png" width="120" height="120" />
+                        </a>
+
+                    </li>
+                </ul>
+                <!-- End Elastislide Carousel -->
+            </div>
+           
+
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="~/Scripts/jquery.elastislide.js"></script>
+        <script src="~/Scripts/jquerypp.custom.js"></script>
+        <script type="text/javascript">
+            $('#carousel').elastislide();
+        </script>
+    </div>
+    <!--js-->
+    <!--end js-->
+</div><!--điểm đến nổi bật-->
+<div class="row">
+    <div class="col-md-12" >
+        <div class="container" id="contentnhahang">           
+                <div class="nha-hang-new">
+                    <h2 style="color: #000; font-size: 2em; font-weight: bold;margin-top:48px; ">NHÀ HÀNG MỚI</h2>
+                    <p style="color: #979292;font-size: 13px;">Hàng ngàn điểm đến thú vị được cập nhật thường xuyên<a class="xem-all" href="#">Xem thêm nhà hàng</a></p>
+                </div>           
+        </div>      
+    </div>
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row nha-hang">
+                <div class="col-xs-1">
+                    @*<a href="#">
+                        <img src="~/Images/Service/logokm.png" class="img-responsive" alt="" width="102" height="102" />
+                    </a>*@
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">                 
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>              
+               
+                <!--2-->
+                <div class="col-xs-1">
+                    @*<a href="#">
+                <img src="~/Images/Service/logokm.png" class="img-responsive" alt="" width="102" height="102" />
+            </a>*@
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div> 
+                <!--3-->
+                <div class="col-xs-1">
+                    @*<a href="#">
+                <img src="~/Images/Service/logokm.png" class="img-responsive" alt="" width="102" height="102" />
+            </a>*@
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div> 
+                <!--3-->
+                <div class="col-xs-1">
+                    @*<a href="#">
+                <img src="~/Images/Service/logokm.png" class="img-responsive" alt="" width="102" height="102" />
+            </a>*@
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-xao-ot.png" data-fullsize="../Images/Product/ca-xao-ot.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div>
+                <div class="col-xs-1">
+                    <a href="#" target="_blank">
+                        <img src="~/Images/Product/ca-hap.png" data-fullsize="../Images/Product/ca-hap.png" class="img img-responsive" alt="Sứ buffet - Giao thoa ẩm thực Á - Âu" data-sale="-50%" data-address="Số 64 Nguyễn Du, Hoàn Kiếm, Hà Nội" data-date="">
+                    </a>
+                    <meta class="desc" content="Trang chủ>Nhà hàng>SỨ BUFFET - GIAO THOA ẨM THỰC Á - ÂU">
+                </div> 
+                <!-- setup details pane template -->
+                <div id="details-pane" style="display: none;">
+                    <div class="big-img"><a href="" target="_blank"><img src=""></a></div>
+                    <h3 class="title"></h3>
+                    <p class="desc"></p>
+                    <span class="sale">
+
+                    </span>
+                    <b class="triangle_up"></b>
+                </div>
+                <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+                <script type="text/javascript">
+                    $(function () {
+                        $('.nha-hang .col-xs-1 img').on('mouseover', function (e) {
+                            var dpane = $('#details-pane');
+                            var dpanetitle = $('#details-pane .title');
+                            var datasapansale = $('#details-pane .sale');//sale -50%
+                            var dpanedesc = $('#details-pane .desc');
+                            var newtitle = $(this).attr('alt');
+                            var newdate = $(this).attr('data-address');
+                            var datasale = $(this).attr('data-sale');
+                            var newdesc = $(this).parent().next('meta.desc').attr('content');
+                            var newimg = $(this).attr('data-fullsize');
+                            var linkurl = $(this).parent().attr('href');
+
+                            var position = $(this).offset();
+                            var imgwidth = $(this).width();
+                            var ycoord = position.top - 5145;
+                            if (position.left / $(window).width() >= 0.2) {
+                                var xcoord = position.left - 400;
+                                // details pane is 530px fixed width
+                                // if the img position is beyond 50% of the page, we move the pane to the left side
+                            } else {
+                                var xcoord = position.left + imgwidth;
+                            }
+
+                            $('.big-img a').attr('href', linkurl);
+                            $('.big-img a img').attr('src', newimg);
+
+                            var titlehtml = newtitle + '<br /><span>(' + newdate + ')</span>';
+                            datasapansale.html(datasale);
+                            dpanetitle.html(titlehtml);
+                            dpanedesc.html(newdesc);
+                            dpane.css({ 'left': xcoord, 'top': ycoord, 'display': 'block' });
+
+                        }).on('mouseout', function (e) {
+                            $('#details-pane').css('display', 'none');
+                        });
+
+                        // when hovering the details pane keep displayed, otherwise hide
+                        $('#details-pane').on('mouseover', function (e) {
+                            $(this).css('display', 'block');
+                        });
+                        $('#details-pane').on('mouseout', function (e) {
+                            //this is the original element the event handler was assigned to
+                            var e = e.toElement || e.relatedTarget;
+                            if (e.parentNode == this || e.parentNode.parentNode == this || e.parentNode.parentNode.parentNode == this || e == this || e.nodeName == 'IMG') {
+                                return;
+                            }
+                            $(this).css('display', 'none');
+                            //console.log(e.nodeName)
+                        });
+                    });
+                </script>
+            </div>           
+        </div>        
+    </div>
+</div><!--/.nhà hàng mới-->
+<div class="row" id="middle" style="background-image: url(../images/Service/bg.png)">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 wow fadeInDown">
+                <div class="skill">
+                    <h2 style="color: #fff; font-size: 1.9em; font-weight: bold; margin-top: 80px; ">DÙNG THỬ NGAY</h2>
+                    <p style="color: #fff;font-size: 14px;">Cùng khám phá xu hướng đặt chỗ thông minh với ứng dụng PASGO trên 2 hệ máy IOS & Android</p>
+                    <hr />
+                    <button type="submit" class="btn btn-warning"><b class=" glyphicon glyphicon-apple"> </b>  Apple Store</button>
+                    <button type="submit" class="btn btn-default"><b class="glyphicon glyphicon-floppy-save"> </b>  Google Play</button>
+                    <br />
+                    <br />
+                    <br />
+                    <div class=" embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qA8Ped5QZjo" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                    </div>
+                </div>
+            </div><!--/.col-sm-6-->
+            <div class="col-sm-9 wow fadeInDown">
+                <div class="accordion">
+                    <img src="~/Images/Service/maps.png" class=" img  img-responsive" width="1000" alt="" />
+                </div>
+            </div>
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div><!--dùng thử ngay-->
+

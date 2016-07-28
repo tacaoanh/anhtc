@@ -1,0 +1,738 @@
+﻿@{
+    ViewBag.Title = "Chi tiết tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+<!--slide bar-->
+<link href="~/Content/bar/style.css" rel="stylesheet" />
+<!--end-->
+<link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#content-detail').hide();
+        $('#form1').hide();
+        $('#xemthem').click(function () {          
+            $('#content-detail').toggle();
+
+        });
+        $('#button').click(function () {
+            $('#form1').toggle();
+        })
+    });
+</script>   
+
+}
+
+<div class="row" id="news-detail">
+    <div class="container">
+        <p>Trang chủ > Nhà hàng > Nhà hàng Điểm Hẹn Sài Gòn Quán – 4 trong 1</p>
+        <h2>Nhà hàng Điểm Hẹn Sài Gòn Quán – 4 trong 1</h2>        
+    </div>  
+    <div class="container-fluid">
+        <ul class="container nav nav-tabs" role="tablist" id="myTab">
+            <li class="active"><a href="#thongtin" role="tab" data-toggle="tab">Thông tin</a></li>
+            <li><a href="#danhgia" role="tab" data-toggle="tab">Đánh giá</a></li>
+            <li><a href="#thucdon" role="tab" data-toggle="tab">Thực đơn</a></li>            
+        </ul>
+
+        <div class=" container-fluid tab-content">
+            <div class=" container tab-pane active" id="thongtin">
+                <div class="row">
+                    <div class="col-md-8"><!--slide + nội dung chi tiết-->
+                        <div class="row" id="slide-thongtin">
+                            <div class="col-md-12">
+                                <div id="about-slider">
+                                    <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators visible-xs">
+                                            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-slider" data-slide-to="1"></li>
+                                            <li data-target="#carousel-slider" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="~/Images/News/slide-news1.png" class="img-responsive" alt="" />
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/Images/News/slide-news2.png" class="img-responsive" alt="" />
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/Images/News/slide-news3.png" class="img-responsive" alt="" />
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+                                            <i class="glyphicon glyphicon-menu-left"></i>
+                                        </a>
+
+                                        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                        </a>
+                                    </div> <!--/#carousel-slider-->
+                                </div><!--/#slider-->
+                            </div>                           
+                        </div> 
+                        <div class="row" id="txt-newsdetail">
+                            <div class="col-md-6" style="background: #262525; color:#fff;">
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <td colspan="2" style="text-transform: uppercase; font-weight: bold; font-size: 2em; border: none; padding-bottom: 14px;"> Điểm nổi bật</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Vị trí thuận lợi	</td>
+                                        <td>: Có chỗ để xe dành cho ô tô</td>
+                                    </tr>
+                                    <tr>
+                                        <td> Món ăn		</td>
+                                        <td>: Thực đơn phong phú, hấp dẫn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phục vụ		</td>
+                                        <td>: Nhân viên chu đáo, niềm nở</td>
+                                    </tr>
+                                    <tr>
+                                        <td> Không gian	</td>
+                                        <td>: Gần gũi, sang trọng, gồm 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Loại hình		 </td>
+                                        <td>: Tiệc, bufet, lẩu, món rừng...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giá cả		</td>
+                                        <td>: Hợp lý</td>
+                                    </tr>
+                                    <tr>
+                                        <td> Loại hình		  </td>
+                                        <td>: Tiệc, bufet, lẩu, món rừng...</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6" style="text-align:justify; font-size:12px;">
+                                Với sự kết hợp hài hòa, tinh tế của mô hình 4 trong 1: nhà hàng, garden café, beer club…, nhà hàng Điểm Hẹn Sài Gòn Quán là điểm hẹn lý tưởng cho những buổi gặp mặt gia đình, bạn bè cùng thưởng thức những món ngon khắp Á, Âu, Hoa.
+                                <br /><br />
+                                Với không gian đa dạng, mới lạ mà ấm cúng, nhà hàng Điểm Hẹn Sài Gòn Quán phù hợp với mọi tầng lớp và mọi độ tuổi.<br /><br /><br />
+                                <img src="~/Images/News/news-anhnho.png" class="img-responsive" alt="" />
+                            </div>
+                            <div class="col-md-12">                             
+                                                              
+                                <div class="col-md-12" id="content-detail"  >
+
+                                    <img src="~/Images/News/news-detail1.png" class="img-responsive"/>
+                                </div>
+                                <img src="~/Images/News/like-news.png" class="img-responsive" /><br /><!--like G+, face--> 
+                                <div class="text-center" id="xemthem">
+                                     <br /><div style="cursor:pointer; width: 15px; height: 15px; border-radius: 50%; background: #676767; color: #fff; padding: 12px 25px 25px 12px; " class="glyphicon glyphicon-chevron-down"><br /></div>
+
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" id="txt-newsdetail">
+                            <img src="~/Images/News/comment-face.png" class="img-responsive"/>
+                            <div style="border-top:1px solid#dddddd;">
+                                <ul id="tags">
+                                    <li>
+                                        Tags:
+                                        <a>Nhà hàng âu</a>
+                                    </li>
+                                    <li>
+                                        <a>Bít tết</a>
+                                    </li>
+                                    <li>
+                                        <a>Giá trung bình</a>
+                                    </li>
+                                    <li>
+                                        <a>Tiếp khách</a>
+                                    </li>
+                                    <li>
+                                        <a>Cá hồi</a>
+                                    </li>
+                                    <li>
+                                        <a>Quận hoàn  kiếm</a>
+                                    </li>
+                                    <li>
+                                        <a>Món âu</a>
+                                    </li>
+                                    <li>
+                                        <a>Piza</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </div>  
+                        <div class="row" id="txt-newsdetail">
+                           <span style="margin-left:10px;color:#676767;font-weight:300;">Maps:</span> <br />
+                            <img src="~/Images/Banner/banner-map.png" class="img-responsive img-thumbnail" alt=""/>
+                        </div>
+                        <div class="row" id="txt-newsdetail-slide">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active"><a href="#baivietlienquan" role="tab" data-toggle="tab">Bài viết liên quan</a></li>
+                                <li><a href="#baihot" role="tab" data-toggle="tab">Bài hot</a></li>                              
+                            </ul>
+
+                            <!-- Tab slide bar css-->
+                            <link href="~/Content/bar/slidebar.css" rel="stylesheet" />
+                            <link href="~/Content/bar/jquery.jscrollpane.css" rel="stylesheet" />
+                            <!--end css-->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="baivietlienquan">
+                                    <div id="ca-container" class="ca-container">
+                                        <div class="ca-wrapper">
+                                            <div class="ca-item ca-item-1">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>                                                    
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-2">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-3">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-4">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-5">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-6">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-7">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                            <div class="ca-item ca-item-8">
+                                                <div class="ca-item-main">
+                                                    <div class="ca-icon">
+                                                        <img src="~/Images/Product/ca-hap.png" class="img-responsive" alt="" />
+                                                        <h4>NẤM ĐẠI VIỆT</h4>
+                                                        <i>60 Trần xuân soạn Ngô Thì Nhậm, hai Bà Trưng, Hà Nội</i>
+                                                        <span id="cat-sale">-60%</span>
+                                                    </div>
+                                                    <a href="#" class="ca-more">XEM NGAY...</a>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="baihot">Bài hót</div>                               
+                            </div>
+                        </div>             
+                    </div>
+                    <div class="col-md-4">
+                       <div class="row" id="news-sao">
+                           <div class="col-md-12">
+                               <img src="~/Images/News/sao-vang.png" class="img-responsive" alt="" height="1" />                          
+                                 
+                                     <p>477 Lê Hồng Phong, P. 2, Q. 10, HCM</p>
+                               <div >
+                                   <span style="color:#ff0000;" class=" glyphicon glyphicon-user"></span>  5 Khách đã đặt bàn | $ 25,000đ - 250,000đ
+                               </div> 
+                              
+                           </div>
+                         
+                       </div>
+                        <div class="row" id="news-datcho">
+                            <div class="col-md-12 text-center">                               
+                                <p>Đặt chỗ trước khi đến</p>
+                                <div>
+                                    Giảm 20% khi đặt chỗ qua pasgo
+                                </div>
+                                <br />
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Nhập số  người đến" required>
+                                    <span style="color:#ff0000;" class="input-group-addon"><b class="glyphicon glyphicon-user"></b></span>
+                                </div>
+                                <br />
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker'>
+                                        <input type='text' class="form-control" placeholder="Ngày" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker').datepicker();
+                                });
+                            </script>                   
+                            <div class="col-md-6">                              
+                                <div class="form-group">
+                                    <div class='input-group'>
+                                        <select class="form-control">
+                                            <option>Giờ</option>
+                                            <option>12.00 h</option>
+                                            <option>5.00 h</option>
+                                            <option>3.00 h</option>
+                                            <option>2.00 h</option>
+                                            <option>1.00 h</option>
+                                            <option>4.00 h</option>
+                                        </select>
+                                        <span class="input-group-addon"><b class="glyphicon glyphicon-time"></b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button style="width: 100%; height: 40px; background-color: #c82137; text-align: center; color: #fff; border: none;">Đặt chỗ</button>
+                                <h5 style="margin-bottom:42px; color:#808080; ">( Hotline trợ giúp:<b>0471 066 066</b>  )</h5>
+                            </div>
+                        </div>
+                    </div><!--right tabs-->
+                </div>
+            </div>
+            <div class="container tab-pane" id="danhgia">
+                <div class="row">
+                    <div class="col-md-8"><!--left tabs-->
+                        <div class="row" id="txt-newsdetail">
+                            <div class="col-md-12">
+                                <h4 style="text-transform:uppercase;">đánh giá của khách hàng</h4>
+                                <hr />
+                            </div>
+                            <div class="col-md-6" >
+                                <img src="~/Images/News/tabs-logo.png" class="img-responsive" />
+                            </div>
+                            <div class="col-md-6" style="border-left:1px solid#d5d5d5;margin-bottom:20px;">
+                                <table class="table table-responsive" border="0">
+                                    <tr>
+                                        <td style="width:5px;"> <span style="color:#ffd800;" class="glyphicon glyphicon-star"><b style="color:#000;">5</b></span></td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:5px;"> <span style="color:#ffd800;" class="glyphicon glyphicon-star"><b style="color:#000;">4</b></span></td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:5px;"> <span style="color:#ffd800;" class="glyphicon glyphicon-star"><b style="color:#000;">3</b></span></td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:5px;"> <span style="color:#ffd800;" class="glyphicon glyphicon-star"><b style="color:#000;">2</b></span></td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:5px;"> <span style="color:#ffd800;" class="glyphicon glyphicon-star"><b style="color:#000;">1</b></span></td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr class="text-center" style="width:50%;"/>
+                            <div class="col-md-12 text-center">
+                                <button id="button" style="color:#cb0707;font-weight:bold;" class="btn btn-group-xs ">VIẾT ĐÁNH GIÁ</button>
+                                <hr />
+                                <img src="~/Images/News/vietdanhgia.png" class="img-responsive"  />    <br />
+                                <form class="form-group" id="form1">
+                                    <input type="text" class="form-control" placeholder="Tiêu đề" required /><br />
+                                    <textarea cols="10" rows="5" class="form-control" placeholder="Đánh giá(Tùy chọn)" required></textarea><br />
+                                    <input id="gui-yeu-cau" style="float:right;" type="submit" class="btn btn-danger" value="Gửi" /> 
+                                </form>  
+                                          
+                            </div>
+                            
+                            <img src="~/Images/News/coment-danhgia.png" class="img-responsive" />
+                           <div class="col-md-12" id="tabs-baiviet">
+                               <ul class="nav nav-tabs" role="tablist" id="myTab">
+                                   <li class="active"><a href="#baivietnoibat" role="tab" data-toggle="tab">Bài viết nổi bật</a></li>
+                                   <li><a href="#Baihot" role="tab" data-toggle="tab">Bài hot</a></li>
+                                   
+                               </ul>
+
+                               <div class="tab-content">
+                                   <div class="tab-pane active" id="baivietnoibat">
+                                       <div class="slide-holder">
+                                           <div class="slide-pager">
+                                               <div class="slide-control-prev">«</div>
+                                               <div class="slide-control-next">»</div>
+                                           </div>
+                                           <div class="slide-container">
+                                               <div class="slide-stage">
+                                                   <div class="slide-image"><a href="#"><img src="~/Images/Product/ca-xao-ot.png" class="img-responsive" alt="" /></a></div>
+                                                   <div class="slide-image"><a href="#"><img src="~/Images/Product/ca-xao-ot.png" class="img-responsive" alt="" /></a></div>
+                                                   <div class="slide-image"><a href="#"><img src="~/Images/Product/ca-xao-ot.png" class="img-responsive" alt="" /></a></div>
+                                                   <div class="slide-image"><a href="#"><img src="~/Images/Product/ca-xao-ot.png" class="img-responsive" alt="" /></a></div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="tab-pane" id="Baihot">
+                                       ....
+                                   </div>
+                                  
+                               </div>
+
+                               <script>
+                                   $(function () {
+                                       $('#myTab a:last').tab('show')
+                                   })
+                               </script>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row" id="news-sao">
+                            <div class="col-md-12">
+                                <img src="~/Images/News/sao-vang.png" class="img-responsive" alt="" height="1" />
+
+                                <p>477 Lê Hồng Phong, P. 2, Q. 10, HCM</p>
+                                <div>
+                                    <span style="color:#ff0000;" class=" glyphicon glyphicon-user"></span>  5 Khách đã đặt bàn | $ 25,000đ - 250,000đ
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row" id="news-datcho">
+                            <div class="col-md-12 text-center">
+                                <p>Đặt chỗ trước khi đến</p>
+                                <div>
+                                    Giảm 20% khi đặt chỗ qua pasgo
+                                </div>
+                                <br />
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Nhập số  người đến" required>
+                                    <span style="color:#ff0000;" class="input-group-addon"><b class="glyphicon glyphicon-user"></b></span>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker2'>
+                                        <input type='text' class="form-control" placeholder="Ngày" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker2').datepicker();
+                                });
+                            </script>                           
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class='input-group'>
+                                        <select class="form-control">
+                                            <option>Giờ</option>
+                                            <option>12.00 h</option>
+                                            <option>5.00 h</option>
+                                            <option>3.00 h</option>
+                                            <option>2.00 h</option>
+                                            <option>1.00 h</option>
+                                            <option>4.00 h</option>
+                                        </select>
+                                        <span class="input-group-addon"><b class="glyphicon glyphicon-time"></b></span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button style="width: 100%; height: 40px; background-color: #c82137; text-align: center; color: #fff; border: none;">Đặt chỗ</button>
+                                <h5 style="margin-bottom:42px; color:#808080; ">( Hotline trợ giúp:<b>0471 066 066</b>  )</h5>
+                            </div>
+                        </div>
+                    </div><!--right tabs -->
+                </div>
+            </div>
+            <div class="container tab-pane" id="thucdon">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-3" id="tabs-nav">
+                                <h4 style="text-transform: uppercase; font-size: 12px; font-weight: bold; margin-top: 17px; ">BURGER KING MENU</h4>
+                                <ul id="tabs-thucdon">
+                                    <li>
+                                        <a href="#">King Deals</a>
+                                    </li>
+                                    <li><a href="#">Value Meal</a></li>
+                                    <li><a href="#">Whopper Family</a></li>
+                                    <li><a href="#">Beef</a></li>
+                                    <li><a href="#">Chicken</a></li>
+                                    <li><a href="#">Rice King</a></li>
+                                    <li><a href="#">Món Ăn Kèm</a></li>
+                                    <li><a href="#">Thức Uống</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9" id="list-news">
+
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                                <div class="row" id="list-news-item">
+                                    <div class="col-md-4">
+                                        <h4 style="font-weight:bold;">Bơ Gơ New Me</h4>
+                                        <a style="color:#cb0707;text-decoration:none;cursor:pointer;font-size:12px;" href="#">King Deals</a>
+                                    </div>
+                                    <div class="col-md-6" style="text-align:justify;font-size:12px;margin-bottom:10px;">
+                                        Star Of KING DEAL. Bơ gơ bò nướng lửa hồng với phần nhân 100% thịt bò xay nguyên chất đã thơm nay càng ngon hơn khi được gia tăng hương vị bởi lớp sốt đặc biệt mang hương vị châu Á. Thêm vào đó, tiếng "rộp" giòn tan của lát khoai tây bên trong khi cắn 1 miếng đã làm say lòng nhiều thực khách vốn dĩ rất khó tính của BURGER KING ®
+
+                                    </div>
+                                    <div class="col-md-2"><b style="font-size:1.6em;">28.000</b><u>đ</u></div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <img style="cursor:pointer;" src="~/Images/News/page-site.png" class="img-responsive" />
+
+                            </div>
+                        </div>    
+                        <div class="row">
+                            <div class="col-md-12" id="khung-slide-tabs">
+                                <ul class="nav nav-tabs" role="tablist" id="myTab">
+                                    <li class="active"><a href="#bvlq" role="tab" data-toggle="tab">Bài viết liên quan</a></li>
+                                    <li><a href="#bh" role="tab" data-toggle="tab">Bài hot</a></li>
+
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class=" tab-pane active" id="bvlq">slide</div>
+                                    <div class=" tab-pane" id="bh">Slide bar</div>
+                                </div>
+
+                                <script>
+                                    $(function () {
+                                        $('#myTab a:last').tab('show')
+                                    })
+                                </script>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row" id="news-sao">
+                            <div class="col-md-12">
+                                <img src="~/Images/News/sao-vang.png" class="img-responsive" alt="" height="1" />
+
+                                <p>477 Lê Hồng Phong, P. 2, Q. 10, HCM</p>
+                                <div>
+                                    <span style="color:#ff0000;" class=" glyphicon glyphicon-user"></span>  5 Khách đã đặt bàn | $ 25,000đ - 250,000đ
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row" id="news-datcho">
+                            <div class="col-md-12 text-center">
+                                <p>Đặt chỗ trước khi đến</p>
+                                <div>
+                                    Giảm 20% khi đặt chỗ qua pasgo
+                                </div>
+                                <br />
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Nhập số  người đến" required>
+                                    <span style="color:#ff0000;" class="input-group-addon"><b class="glyphicon glyphicon-user"></b></span>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" placeholder="Ngày" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker1').datepicker();
+                                });
+                            </script>                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class='input-group'>
+                                        <select class="form-control">
+                                            <option>Giờ</option>
+                                            <option>12.00 h</option>
+                                            <option>5.00 h</option>
+                                            <option>3.00 h</option>
+                                            <option>2.00 h</option>
+                                            <option>1.00 h</option>
+                                            <option>4.00 h</option>
+                                        </select>
+                                        <span class="input-group-addon"><b class="glyphicon glyphicon-time"></b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button style="width: 100%; height: 40px; background-color: #c82137; text-align: center; color: #fff; border: none;">Đặt chỗ</button>
+                                <h5 style="margin-bottom:42px; color:#808080; ">( Hotline trợ giúp:<b>0471 066 066</b>  )</h5>
+                            </div>
+                        </div>
+                    </div><!--right tabs-->
+                    
+                </div>                
+            </div>            
+        </div>
+
+        <script>
+            $(function () {
+                $('#myTab a:last').tab('show')
+            })
+        </script> 
+       
+    </div>
+</div>
+<script src="~/Scripts/bar/custom.js"></script>
+    <!--js slide bar-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="~/Scripts/bar/jquery.contentcarousel.js"></script>
+    <script src="~/Scripts/bar/jquery.easing.1.3.js"></script>
+    <script src="~/Scripts/bar/jquery.mousewheel.js"></script>
+    <script type="text/javascript">
+        $('#ca-container').contentcarousel();
+    </script>
+
+

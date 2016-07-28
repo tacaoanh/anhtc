@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/dichvu/icon logo-PASGO.ico">
+        <title>@ViewBag.Title</title>
+        <!--style css-->      
+        <link href="~/Content/main.css" rel="stylesheet" />
+        <link href="~/css/animate.min.css" rel="stylesheet" />
+        <link href="~/Content/style.css" rel="stylesheet" />
+        
+        <!--end-->
+       <!--sao -->
+        <script src="~/Content/src/jquery.rateit.js"></script>
+        <link href="~/Content/src/rateit.css" rel="stylesheet" />        
+        <!--datetimpicker-->      
+       
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")       
+      <!--css go to head page-->
+<style type="text/css">
+    .smoothscroll-top {
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+         overflow: hidden;
+        text-align: center;
+        z-index: 99;
+        background-color: #2ba6e1;
+        color: #fff;
+        width: 47px;
+        height: 44px;
+        line-height: 44px;
+        right: 25px;
+        bottom: -25px;
+        padding-top: 2px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.2s;
+    }
+        .smoothscroll-top:hover {
+            background-color: #3eb2ea;
+            color: #fff;
+            transition: all 0.2s ease-in-out;
+            transition-delay: 0s;
+        }
+        .smoothscroll-top.show {
+            visibility: visible;
+            cursor: pointer;
+            opacity: 1;
+            bottom: 25px;
+        }
+        .smoothscroll-top i.fa {
+            line-height: inherit;
+        }
+</style>    
+    </head>
+    <body>  
+        <div class="container-fluid">
+            <header id="header">
+                <div class="row" style="background-color: #a91f31;">
+                    <div>
+                        <ul id="topnav">
+                            <li id="left-menu">
+                                <a class="navbar-brand" href="@Url.Action("Index")">
+                                    <img src="~/Images/Vector-Smart-Object.png" alt="logo" width="100" height="30" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Home <p style="font-size:9px;" class="glyphicon glyphicon-menu-down"></p></a>
+                                <span>
+                                    <a id="left-menu" href="#">Dịch vụ</a>
+                                    <a href="@Url.Action("imgsize","Home")">Nhà hàng</a>
+                                    <a href="#">Bar Cate</a>
+                                    <a href="#">Làm đẹp - Spa</a>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">Điểm đến <p style="font-size:9px;" class="glyphicon glyphicon-menu-down"></p></a>
+                                <span>
+                                    <a id="left-menu" href="@Url.Action("Restaurant", "Home")">Nhà hàng</a>
+                                    <a href="@Url.Action("Newsdetail", "Home")">Bar Cate</a>
+                                    <a href="#">Làm đẹp - Spa</a>
+                                    <a href="#">Thời trang</a>
+                                    <a href="#">Sức khỏe</a>
+                                    <a href="#">Giải trí</a>                                  
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">Giới thiệu Pasgo <p style="font-size:9px;" class="glyphicon glyphicon-menu-down"></p></a>
+                                <span>
+                                    <a id="left-menu" href="@Url.Action("News", "Home")">Sản phẩm</a> |
+                                    <a href="@Url.Action("About", "Home")">Về chúng tôi</a> |
+                                    <a href="#">CSS</a>
+                                    <a href="#">jQuery</a>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">Blog Pasgo </a>
+                            </li>
+                            <li>
+                                <a href="#">Smart Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Liên Hệ <p style="font-size:9px;" class="glyphicon glyphicon-menu-down"></p></a>
+                                <span>
+                                    <a id="left-menu" href="@Url.Action("Contact","Home")">Liên hệ</a> |
+                                    <a href="#">2 Column</a> |
+                                    <a href="#">3 Column</a> |
+                                    <a href="#">4 Column</a> |
+                                    <a>
+                                    </a>
+                                    <form id="form-search-contact" method="get">
+                                        <input type="text" id="search-lienhe" required placeholder="Search..." /><button id="btn-search-lienhe" type="button" class="glyphicon glyphicon-search"></button>
+                                    </form>
+                                </span>
+                            </li>
+                            <li>
+                                <!-- Button trigger modal -->
+                                <a href="#" class="" data-toggle="modal" data-target="#myModal">
+                                    Đăng nhập | Đăng ký <u class="glyphicon glyphicon-menu-down"></u>
+                                </a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header text-center" style="background-color: #0e0e0e;color:#fff;">
+                                                <h4 class="modal-title" id="myModalLabel" style="color: #fff; font-weight: bold;"><img src="~/Images/Service/Vector-Smart-Object.png" width="150" height="30" /></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!--tab-->
+                                                <ul class="nav nav-tabs text-center" role="tablist" id="myTab">
+                                                    <li class="active"><a href="#home" role="tab" data-toggle="tab">Đăng nhập</a></li>
+                                                    <li><a href="#profile" role="tab" data-toggle="tab">Đăng ký thành viên</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <style>
+                                                        #txtwidth {
+                                                            width: 300px;
+                                                            height: 36px;
+                                                        }
+                                                    </style>
+                                                    <div class="tab-pane active" id="home">
+                                                        @using (Html.BeginForm("logined", "Home", FormMethod.Post, new { @class = "form-group " }))
+                                                        {
+                                                            @Html.AntiForgeryToken()
+                                                            @Html.ValidationSummary(false, null, new { @class = "alert alert-danger" })
+
+                                                            <b>Số  điện thoại</b><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-user "></i></b>
+                                                                <input type="text" name="UserName" class="form-control" placeholder="Username" required>
+                                                            </div>
+                                                            <b>Mật khẩu</b><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></b>
+                                                                <input type="password" name="Password" class="form-control" placeholder="password" required>
+                                                            </div>
+                                                            <hr />
+                                                            <button style="width: 100%; height: 40px; background-color: #c82137; text-align: center; color: #fff; border: none;">Đăng Nhập</button> <br />
+                                                            <div style="padding-top:30px;"><b style="color: red; float: left; cursor: pointer; margin-right: 350px;">Quên mật khẩu?</b> <input type="checkbox" name="ckluwupas" checked="true" />Ghi nhớ</div>
+                                                        }
+                                                    </div>
+                                                    <div class="tab-pane" id="profile">
+                                                        @using (Html.BeginForm("InsertRegister", "Home", FormMethod.Post, new { @class = "form-group" }))
+                                                        {
+                                                            //Name, Sex, AreaCode, Tel, Password, ConfirmPassword, Email, IntroducerCode
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-user "></i></b>
+                                                                <input type="text" name="Name" class="form-control" placeholder="full name" required>
+                                                            </div><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-check"></i></b>
+                                                                <input type="text" name="Sex" class="form-control" placeholder="Sex" required>
+                                                            </div><br />
+                                                            <b>Mã vùng</b><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-phone-alt "></i></b>
+                                                                <select name="AreaCode" id="txtwidth" class="form-control">
+                                                                    <option>Việt Nam (+84)</option>
+                                                                    <option>Việt Nam (+84)</option>
+                                                                    <option>Việt Nam (+84)</option>
+                                                                    <option>Việt Nam (+84)</option>
+                                                                    <option>Việt Nam (+84)</option>
+                                                                </select>
+                                                            </div>
+                                                            <br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-earphone "></i></b>
+                                                                <input type="text" name="Tel" class="form-control" placeholder="tel" required>
+                                                            </div><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></b>
+                                                                <input type="password" name="Password" class="form-control" placeholder="password" required>
+                                                            </div><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-log-in"></i></b>
+                                                                <input type="password" name="ConfirmPassword" class="form-control" placeholder="Confirm password" required>
+                                                            </div><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-send "></i></b>
+                                                                <input type="email" name="Email" class="form-control" placeholder="email" required>
+                                                            </div><br />
+                                                            <b>Mã người giới thiệu</b><br />
+                                                            <div class="input-group">
+                                                                <b class="input-group-addon"><i class="glyphicon glyphicon-barcode"></i></b>
+                                                                <input type="text" name="IntroducerCode" class="form-control" placeholder="123456" required>
+                                                            </div><br />
+                                                            <p>Vui lòng  nhập ID Pasgo hoặc số điện thoại người giới  thiệu. Nếu chưa có  xin mời  bạn nhập mã sau: 012345678</p>
+                                                            <button style="width:100%;height:40px;background-color:#c82137;text-align:center;color:#fff;border:none;">Đăng ký</button> <br />
+                                                            <div style="padding-top:20px;" class="input-group">
+                                                                <input name="ck" type="checkbox" checked="true" />Tôi đồng  với các<b style="color:#c82137;cursor:pointer;"> Điều khoản sử dụng</b> của Pasgo
+                                                            </div>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="submit" style="background:#861818;color:#fff;height: 40px; width: 49%;font-size:11px;border:none;">g+ Đăng nhập Google+</button>
+                                                <button type="submit" style="background: #5463d9; color: #fff; height: 40px; width: 49%; font-size: 11px;border:none;">f Đăng nhập Facebook</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#"><p style="font-size:9px;" class="glyphicon glyphicon-phone"></p> Apps</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header><!--menu end-->
+            <div class="container-fluid clear-fix" style="margin:0; padding:0;">
+                @RenderBody()
+            </div>
+            <div class="row" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row" style="margin-bottom:50px;">
+                                <div class="col-md-12 text-center ">
+                                    <img src="~/Images/Service/Skype.png" width="30" height="30" class="img-circle left" />
+                                    <img src="~/Images/Service/youtobeicon.png" width="30" height="30" class="img-circle" />
+                                    <img src="~/Images/Service/facebooks.png" width="30" height="30" class="img-circle" />
+                                    <img src="~/Images/Service/google.png" width="30" height="30" class="img-circle" />
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:50px;">
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <a style="border:2px solid red; padding:15px 45px 15px 45px; font-weight:bold;margin-right:50px;" class="btn btn-link" href="#"> Hỏi & Đáp</a>
+                                    <a style="border: 2px solid #fff; padding: 15px 50px 15px 47px; font-weight: bold;" class="btn btn-link" href="#"> Liên Hệ</a>
+                                </div>
+                                <div class="col-md-2">
+
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-4 ">
+                                    <p style=" font-size:14px;color:#f5fbfb;text-align:justify;">ĐT: 043.200.5689 / Tổng đài: 0471 066 066 / Email: pasgo@onepas.vn / Website: www.pasgo.vn</p>
+                                </div>
+                                <div class="col-md-4" id="rl">
+                                    <p style=" font-size: 14px; color: #f5fbfb; text-align: justify;">ĐT: 043.200.5689 / Tổng đài: 0471 066 066 / Email: pasgo@onepas.vn / Website: www.pasgo.vn</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p style=" font-size: 14px; color: #f5fbfb; text-align: justify;">ĐT: 043.200.5689 / Tổng đài: 0471 066 066 / Email: pasgo@onepas.vn / Website: www.pasgo.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            &copy; 2015<a target="_blank" href="http://pasgo.vn/" title="Nơi mà chất  lượng được đặt lên hàng đầu">Pasgo.vn</a>. All Rights Reserved.
+                        </div>
+                        <div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <ul class="pull-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Điểm đến</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                                <li>
+                                    <a href="#" class="" data-toggle="modal" data-target="#myModal">
+                                        Đăng nhập | Đăng ký <u class="glyphicon glyphicon-chevron-down"></u>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" smoothscroll-top">
+                        <span class=" scroll-top-inner">
+                            <b class="glyphicon glyphicon-open"></b>
+                        </span>
+                    </div>
+                    <script type="text/javascript">
+                    //<![CDATA[
+                    $(function () {
+
+                        $(document).on('scroll', function () {
+
+                            if ($(window).scrollTop() > 100) {
+                                $('.smoothscroll-top').addClass('show');
+                            } else {
+                                $('.smoothscroll-top').removeClass('show');
+                            }
+                        });
+
+                        $('.smoothscroll-top').on('click', scrollToTop);
+                    });
+
+                    function scrollToTop() {
+                        verticalOffset = typeof (verticalOffset) != 'undefined' ? verticalOffset : 0;
+                        element = $('body');
+                        offset = element.offset();
+                        offsetTop = offset.top;
+                        $('html, body').animate({ scrollTop: offsetTop }, 600, 'linear').animate({ scrollTop: 25 }, 200).animate({ scrollTop: 0 }, 150).animate({ scrollTop: 0 }, 50);
+                    }
+                    //]]>
+                    </script>
+                </div>
+                <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+                <script src="~/Scripts/jquery-1.9.1.js"></script>
+                @*<script src="~/Scripts/bootstrap.min.js"></script>
+                <script src="~/Scripts/bootstrap.js"></script>*@
+                <script src="~/Scripts/wow.min.js"></script>               
+            </div><!--/#footer-->
+            <!--script js-->
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+            <script type='text/javascript'>
+            $(document).ready(function () {
+
+                $("ul#topnav li").hover(function () { //Hover over event on list item
+                    $(this).css({ 'background': '#3b3b3b url() repeat-x' }); //Add background color + image on hovered list item
+                    $(this).find("span").show(); //Show the subnav
+                }, function () { //on hover out...
+                    $(this).css({ 'background': 'none' }); //Ditch the background
+                    $(this).find("span").hide(); //Hide the subnav
+                });
+            });
+            $(function () {
+                $('#myTab a:last').tab('show');
+            });
+            </script>         
+        </div>       
+    </body>
+</html>
